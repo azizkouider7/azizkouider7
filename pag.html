@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <div class="cruds">
+        <div class="head">
+            <h2>cruds</h2>
+            <p> pruduct mangement system</p>
+        </div>
+
+        <div class="input">
+            <input type="text" id="title" placeholder="name">
+            <div class="prise">
+                <input onkeyup="getotal()" type="number"  id="prise" placeholder="prise">
+                <input onkeyup="getotal()" type="number" id="texses" placeholder="texses">
+                <input onkeyup="getotal()" type="number" id="discount" placeholder="discount">
+                <input onkeyup="getotal()" type="number" id ="ads" placeholder="ads">
+                <small  id="total">0</small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="submit">creat</button>
+        </div>
+
+        
+        <div class="output">
+            <div class="serchblock">
+                <input onkeyup="sarchcore( this.value)" type="text" id="serch" placeholder="serch">
+                <div class="btnserch">
+                    <button onclick="getsearchmod(this.id)" id="serchbytitle">serchbytitle</button>
+                    <button  onclick="getsearchmod(this.id)" id="serchbbyctigory">serchbbyctigory</button>
+                </div>
+            </div>
+            <div id="delete all">
+
+            </div>
+            
+            <table id="table">
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>prise</th>
+                    <th>texses</th>
+                    <th>discount</th>
+                    <th>ads</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>updat</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id ="tbody">
+                    <tr>
+                        
+                        <td><button id="updat">updat</button></td>
+                        <td><button id="delete">delete</button></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
